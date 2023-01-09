@@ -104,12 +104,16 @@ h2 {
 }
 
 .mid {
-  height: 15rem;
-  padding: 1rem;
-  background-color: rgba(99, 18, 18);
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/nightsky.jpg);
+  background-size: cover;
 }
 .mid > h4 {
   margin: 0;
+  width: 35rem;
   padding: 4rem;
   border: none;
   text-align: center;
@@ -126,6 +130,15 @@ label {
 
 .second {
   background-color: rgb(0, 0, 0);
+  padding: 2rem;
+}
+
+.rocket {
+  display: flex;
+  justify-content: center;
+}
+
+.rocket-logo {
   padding: 2rem;
 }
 
