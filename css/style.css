@@ -2,12 +2,10 @@
 /* CSS
 /*******************************************/
 
-/* Box Model Hack */
 * {
   box-sizing: border-box;
   color: whitesmoke;
   font-family: "Orbitron";
-  /* background-color: rgb(5, 5, 5); */
 }
 
 /******************************************
@@ -18,9 +16,6 @@ img {
   margin: 0 auto;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
 header {
   background-color: rgb(5, 5, 5);
   border-bottom: 1px solid rgba(99, 18, 18);
