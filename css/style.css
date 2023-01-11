@@ -54,7 +54,7 @@ header {
   transition: 0.3s ease;
 }
 .banner {
-  height: 40rem;
+  height: 32rem;
   background-image: url(../media/moon.jpg);
   background-size: contain;
   display: flex;
@@ -79,7 +79,7 @@ h3 {
   border-radius: 4px;
   padding: 2rem;
   line-height: 2rem;
-  box-shadow: 0 1px 3px #FFFF;
+  box-shadow: 0 1px 3px #ffff;
 }
 
 h2 {
@@ -89,7 +89,7 @@ h2 {
 }
 
 .input {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -97,7 +97,10 @@ h2 {
 .input-field {
   color: black;
 }
-
+.date {
+  display: flex;
+  flex-direction: column;
+}
 .mid {
   height: 40rem;
   display: flex;
@@ -108,8 +111,8 @@ h2 {
 }
 .mid > h4 {
   margin: 0;
-  width: 60%;
-  padding: 4rem 0 4rem 10rem;
+  width: 50%;
+  padding: 10rem 0 4rem 10rem;
   border: none;
   text-align: center;
   letter-spacing: 0.3rem;
@@ -125,17 +128,13 @@ label {
 
 .second {
   background-color: rgb(0, 0, 0);
-  padding: 2rem;
+  padding: 0 2rem 2rem;
 }
 
 .rocket {
-  margin: 0 auto;
+  margin-right: 3rem;
   height: 15rem;
   width: 10rem;
-}
-
-.rocket-logo {
-  padding: 2rem;
 }
 
 img {
@@ -143,21 +142,44 @@ img {
   height: auto;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 button {
   color: whitesmoke;
+  height: 3rem;
   background-color: rgb(0, 0, 0);
   text-transform: uppercase;
   border: 1px solid rgba(99, 18, 18);
   background-color: rgba(99, 18, 18);
-  border-radius: 4px;
+  border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
+  margin-top: 2.5rem;
 }
 
 button:hover {
   background-color: rgb(193, 35, 35);
   transition: 0.3s ease-in-out;
   color: white;
+}
+
+.divider {
+  position: absolute;
+  top: 2;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 160px;
+}
+
+.divider .shape-fill {
+  fill: rgb(4, 3, 3);
 }
