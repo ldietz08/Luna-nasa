@@ -7,6 +7,9 @@
   color: whitesmoke;
   font-family: "Orbitron";
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /******************************************
 /* LAYOUT
@@ -79,7 +82,6 @@ h3 {
   border-radius: 4px;
   padding: 2rem;
   line-height: 2rem;
-  box-shadow: 0 1px 3px #ffff;
 }
 
 h2 {
