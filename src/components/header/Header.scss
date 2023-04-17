@@ -1,0 +1,41 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/breakpoints" as breakpoints;
+@use "../../styles/partials/resets";
+@use "../../styles/partials/fonts";
+
+header {
+  background-color: rgb(5, 5, 5);
+  border-bottom: 1px solid rgba(99, 18, 18);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    font-weight: 300;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: $secondary-white;
+    &:hover {
+      color: rgba(99, 18, 18);
+      transition: 0.3s ease;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 1rem 0 0 2rem;
+  }
+  &__item {
+    list-style: none;
+    display: flex;
+  }
+  &__link {
+    color: $secondary-white;
+    text-decoration: none;
+    &:hover {
+      color: rgba(99, 18, 18);
+      transition: 0.3s ease;
+    }
+  }
+}
