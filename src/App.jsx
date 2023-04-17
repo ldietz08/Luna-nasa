@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./App.scss";
 import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
 
 const API_KEY = `${import.meta.env.VITE_API_KEY}`;
 
@@ -35,6 +36,7 @@ export default function App() {
       <div className="App">
         <BrowserRouter>
           <Header />
+          <Hero />
           <Routes>
             {/* <Route path="/" element={<Home />} />
             <Route path="bulletin" element={<About />} />
