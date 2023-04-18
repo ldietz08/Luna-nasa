@@ -15,8 +15,8 @@ export default function Header() {
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/about" className="nav__link">
-              About
+            <Link to="/mars" className="nav__link">
+              Mars
             </Link>
           </li>
           <li className="nav__item">

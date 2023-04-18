@@ -1,7 +1,6 @@
 import "./Explore.scss";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 export default function Explore() {
   const [choice, setChoice] = useState("");
   const [apod, setApod] = useState([]);
@@ -23,18 +22,24 @@ export default function Explore() {
         console.log(error);
       });
   };
+
   return (
     <>
       <div className="apod">
+        <label htmlFor="date" className="apod__label">
+          Select a date
+        </label>
         <input
-          className="input"
+          className="apod__input"
           type="date"
+          id="date"
+          name="date"
           onChange={(e) => {
             setChoice(e.target.value);
           }}
         />
         <button onClick={getPic} className="btn">
-          Get pic
+          Explore
         </button>
       </div>
       {apod && (

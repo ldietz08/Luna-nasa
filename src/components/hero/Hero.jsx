@@ -20,7 +20,7 @@ export default function Hero() {
         </svg>
       </div>
       <div className="mid">
-        <h4 id="about">
+        <h4 className="about">
           Wander through space and time with Luna and learn more about what lies
           beyond! Luna's main mission is to expose curious minds to the wonders
           of space.
